@@ -15,6 +15,7 @@ html, body, html * {
     align-items: center;
     display: flex;
     gap: 5px;
+    cursor: pointer;
 }
 .page_content {
     float: left;
