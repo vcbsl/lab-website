@@ -10,6 +10,9 @@ html, body, html * {
     display: flex;
     align-items: center;
 }
+.header_sec a.nav-link.active {
+    text-decoration: underline;
+}
 .header_sec .navbar{margin-bottom:0px;}
 .head_logo {
     align-items: center;
