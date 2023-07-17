@@ -43,6 +43,12 @@ html, body, html * {
 .page_content_wrap p {
     margin: 0 0 15px;
 }
+.data_sheet_img {
+    padding: 20px 0;
+}
+.padd_top_spac{
+    padding-top: 20px;
+}
 .home_news {
     padding: 0 0px 0 13px;
 }
