@@ -18,7 +18,7 @@ $( document ).ready(function() {
 <body>
 <header class="header_sec">
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <div class="container">
+  <div class="container-fluid">
     <div class="header_main">
 	<div class="navbar-header">
 	  <div class="head_logo"><img src="images/logo.png" alt="logo"> <span>Visual Computing and Biometric Security Lab</span></div>
@@ -46,8 +46,25 @@ $( document ).ready(function() {
 </header>
 
 <div class="banner_sec">
-   <img src="images/banner-image-new.png" alt="Banner image">
+   <img src="images/banner-image-upd.png" alt="Banner image">
 </div>
+
+<header class="header_sec mt-10">
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="header_main">
+		  <div class="menu-container">
+			<ul class="nav navbar-nav menu-list">
+			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/">Home</a></li>
+			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-group.html">Research Group</a></li>
+			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/publications.html">Publications</a></li>
+			  <li><a class="nav-link active" href="https://vcbsl.github.io/lab-website/datasets.html">Datasets</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</nav>
+  </header>
 
 <div class="page_content">
    <div class="page_content_wrap">
@@ -128,27 +145,11 @@ $( document ).ready(function() {
 			</div>
 		</div>
 		<div class="facult_tit">Former PhD Students</div>
-		<div class="row sing_facul facult_details">
-		    <div class="col-lg-6 text-center">
-			  <div class="facult_img"><img src="images/ali.png" alt="Ali Almadan"></div>
-			  <h4>Ali Almadan</h4>
-			  <p><b>Research interests:</b> Computer Vision, Biometrics, On-device AI, Deep Learning</p>
-			  <ul>
-			     <li><a href="https://almadan.me/" target="_blank"><img src="images/personalwebsite-icon.png" alt="personalwebsite-icon"></a></li>
-				 <li><a href="https://www.linkedin.com/in/alialmadan/" target="_blank"><img src="images/google-icon.png" alt="google-icon"></a></li>
-				 <li><a href="https://scholar.google.com/citations?user=NEVOtewAAAAJ&hl=en&authuser=1" target="_blank"><img src="images/linkedin-icon.png" alt="linkedin-icon"></a></li>
-			  </ul>
-			</div>
-		    <div class="col-lg-6 text-center">
-			  <div class="facult_img"><img src="images/SmithaHaridasan.png" alt="SmithaHaridasan"></div>
-			  <h4>Smitha Haridasan</h4>
-			  <p><b>Research interests:</b> Computer Vision, Deep Learning, Natural Hazard Detection</p>
-			  <ul class="home_news">
-			     <li><a href="#" target="_blank"><img src="images/personalwebsite-icon.png" alt="personalwebsite-icon"></a></li>
-				 <li><a href="https://www.linkedin.com/in/parshuram-narayan-aarotale-4092ab169/" target="_blank"><img src="images/google-icon.png" alt="google-icon"></a></li>
-				 <li><a href="#" target="_blank"><img src="images/linkedin-icon.png" alt="linkedin-icon"></a></li>
-			  </ul>
-			</div>
+		<div class="facult_former_wrap">
+		    <ul class="home_news">
+				<li><b>Ali Almadan</b><br/>Research interests: Computer Vision, Biometrics, On-device AI, Deep Learning</li>
+				<li><b>Smitha Haridasan</b><br/>Research interests: Computer Vision, Deep Learning, Natural Hazard Detection</li>
+			</ul>
 		</div>
 		<div class="facult_tit">Former M.S Thesis Students</div>
 		<div class="facult_former_wrap">
