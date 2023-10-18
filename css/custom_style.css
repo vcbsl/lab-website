@@ -107,8 +107,7 @@ html, body, html * {
     padding-bottom: 35px;
 }
 .facult_former_wrap {
-    margin: 0 auto;
-    max-width: 520px;
+    margin-left: 15%;
 }
 .padd-top-20 {
     padding-top: 20px;
