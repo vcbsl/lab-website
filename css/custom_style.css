@@ -220,3 +220,11 @@ html, body, html * {
 .mt-10{
     margin-top: -10px;
 }
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sponsors > img {
+    height: 150px;
+    width: 150px;
+}
