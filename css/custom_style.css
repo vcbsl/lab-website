@@ -224,7 +224,3 @@ html, body, html * {
     display: flex;
     justify-content: space-evenly;
 }
-.sponsors > img {
-    height: 150px;
-    width: 150px;
-}
