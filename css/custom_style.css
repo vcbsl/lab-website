@@ -223,4 +223,5 @@ html, body, html * {
 .sponsors{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
