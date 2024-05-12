@@ -237,3 +237,11 @@ html, body, html * {
 .project-item {
     margin-top: 100px;
 }
+.activity {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.img-center {
+    align-self: center;
+}
