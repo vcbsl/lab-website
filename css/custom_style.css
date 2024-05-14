@@ -248,3 +248,7 @@ html, body, html * {
 a.dropdown-item {
     padding: 5px;
 }
+.divider-vert {
+    margin-right: 5px;
+    margin-left: 5px
+}
