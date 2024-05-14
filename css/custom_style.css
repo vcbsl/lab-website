@@ -245,3 +245,6 @@ html, body, html * {
 .img-center {
     align-self: center;
 }
+a.dropdown-item {
+    padding: 5px;
+}

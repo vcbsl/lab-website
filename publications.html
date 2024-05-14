@@ -13,6 +13,14 @@ $( document ).ready(function() {
   $(".head_logo").click(function(){
      window.location.href = "https://vcbsl.github.io/lab-website/";
   });
+
+  $("#publ-navbar-dd1, #publ-navbar-dd2").click(function(){
+	const pathname = window.location.pathname;
+	if (!pathname.includes('publications')) {
+	  window.location.href = "https://vcbsl.github.io/lab-website/publications.html";
+	}
+  });
+
 });
 </script>
 </head>
@@ -37,7 +45,33 @@ $( document ).ready(function() {
         <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/">Home</a></li>
         <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-group.html">Research Group</a></li>
 		<li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-projects.html">Research Projects</a></li>
-        <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/publications.html">Publications</a></li>
+        <!-- <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/publications.html">Publications</a></li> -->
+		<li class="nav-item dropdown">
+			<a class="dropdown-item" class="nav-link dropdown-toggle" href="https://vcbsl.github.io/lab-website/publications.html" id="publ-navbar-dd1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Publications <span class="caret"></span>
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			  <a class="dropdown-item" href="publications.html#2024">2024</a>
+			  <a class="dropdown-item" href="publications.html#2023">2023</a>
+			  <a class="dropdown-item" href="publications.html#2022">2022</a>
+			  <a class="dropdown-item" href="publications.html#2021">2021</a>
+			  <a class="dropdown-item" href="publications.html#2020">2020</a>
+			  <a class="dropdown-item" href="publications.html#2019">2019</a>
+			  <a class="dropdown-item" href="publications.html#2018">2018</a>
+			  <a class="dropdown-item" href="publications.html#2017">2017</a>
+			  <a class="dropdown-item" href="publications.html#2016">2016</a>
+			  <a class="dropdown-item" href="publications.html#2015">2015</a>
+			  <a class="dropdown-item" href="publications.html#2014">2014</a>
+			  <a class="dropdown-item" href="publications.html#2013">2013</a>
+			  <a class="dropdown-item" href="publications.html#2012">2012</a>
+			  <a class="dropdown-item" href="publications.html#2011">2011</a>
+			  <a class="dropdown-item" href="publications.html#2010">2010</a>
+			  <a class="dropdown-item" href="publications.html#2009">2009</a>
+			  <a class="dropdown-item" href="publications.html#2008">2008</a>
+			  <a class="dropdown-item" href="publications.html#2007">2007</a>
+			  <a class="dropdown-item" href="publications.html#2006">2006</a>
+			</div>
+		  </li>
         <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/datasets.html">Datasets</a></li>
 		<li><a class="nav-link" href="https://vcbsl.github.io/lab-website/outreach.html">Outreach</a></li>
       </ul>
@@ -61,7 +95,32 @@ $( document ).ready(function() {
 			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/">Home</a></li>
 			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-group.html">Research Group</a></li>
 			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-projects.html">Research Projects</a></li>
-			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/publications.html">Publications</a></li>
+			  <li class="nav-item dropdown">
+				<a class="dropdown-item" class="nav-link dropdown-toggle" href="https://vcbsl.github.io/lab-website/publications.html" id="publ-navbar-dd2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Publications <span class="caret"></span>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="publications.html#2024">2024</a>
+				  <a class="dropdown-item" href="publications.html#2023">2023</a>
+				  <a class="dropdown-item" href="publications.html#2022">2022</a>
+				  <a class="dropdown-item" href="publications.html#2021">2021</a>
+				  <a class="dropdown-item" href="publications.html#2020">2020</a>
+				  <a class="dropdown-item" href="publications.html#2019">2019</a>
+				  <a class="dropdown-item" href="publications.html#2018">2018</a>
+				  <a class="dropdown-item" href="publications.html#2017">2017</a>
+				  <a class="dropdown-item" href="publications.html#2016">2016</a>
+				  <a class="dropdown-item" href="publications.html#2015">2015</a>
+				  <a class="dropdown-item" href="publications.html#2014">2014</a>
+				  <a class="dropdown-item" href="publications.html#2013">2013</a>
+				  <a class="dropdown-item" href="publications.html#2012">2012</a>
+				  <a class="dropdown-item" href="publications.html#2011">2011</a>
+				  <a class="dropdown-item" href="publications.html#2010">2010</a>
+				  <a class="dropdown-item" href="publications.html#2009">2009</a>
+				  <a class="dropdown-item" href="publications.html#2008">2008</a>
+				  <a class="dropdown-item" href="publications.html#2007">2007</a>
+				  <a class="dropdown-item" href="publications.html#2006">2006</a>
+				</div>
+			  </li>
 			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/datasets.html">Datasets</a></li>
 			  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/outreach.html">Outreach</a></li>
 			</ul>
@@ -74,11 +133,11 @@ $( document ).ready(function() {
   <div class="page_content">
 	<div class="page_content_wrap">
 	 <h1>International Conferences and Journals</h1>
-     <div class="publish_res_paper_year">2024</div>
+     <div class="publish_res_paper_year" id="2024">2024</div>
 	 <ul class="publish_res_paper">
 		<li>Sreeraj Ramachandran and Ajita Rattani<b>"Leveraging Diffusion and Flow Matching Models for Demographic Bias Mitigation of Facial Attribute Classifiers"</b>, 2024 (<a href="https://d197for5662m48.cloudfront.net/documents/publicationstatus/181614/preprint_pdf/1335ac567e8bc0a0aee16ea60decadad.pdf", target="_blank">pdf</a>)</li>
 		 </ul>
-		<div class="publish_res_paper_year">2023</div>
+		<div class="publish_res_paper_year" id="2023">2023</div>
 	 <ul class="publish_res_paper">
 		 <li>Aakash Varma Nadimpalli, and Ajita Rattani,<b> "ProActive DeepFake Detection using GAN-based Visible Watermarking"</b>, ACM Transactions on Multimedia Computing, Communications, and Applications, 2023 (<a href="https://dl.acm.org/doi/10.1145/3625547", target="_blank">pdf</a>)</li>
 		 <li>Anoop Krishnan and Ajita Rattani,<b> "A novel approach for bias mitigation of gender classification algorithms using consistency regularization"</b>, Image and Vision Computing, Elsevier, 2023 (<a href="https://www.sciencedirect.com/science/article/abs/pii/S0262885623001671", target="_blank" >pdf</a>)</li>
@@ -92,7 +151,7 @@ $( document ).ready(function() {
 		 <li>Rinku Datta Sharma, Ajita Rattani, and Dakshina Ranjan Kisku, <b>"An LDOP approach for face identification under unconstrained scenarios"</b>, Journal of Experimental & Theoretical Artificial Intelligence, Taylor & Francis, pp. 1-49, 2023 (<a href="https://www.tandfonline.com/doi/full/10.1080/0952813X.2023.2183274?scroll=top&needAccess=true&role=tab", target="_blank">pdf</a>)</li>
 		 <li>Ali Almadan and Ajita Rattani,<b> "Benchmarking Neural Network Compression Techniques for Ocular-Based User Authentication on Smartphone"</b>, IEEE Access, vol. 11, pp. 36550-36565, 2023 (<a href="https://ieeexplore.ieee.org/document/10093861", target="_blank">pdf</a>)</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2022</div>
+	 <div class="publish_res_paper_year" id="2022">2022</div>
 	 <ul class="publish_res_paper">
 		 <li>Anoop Krishnan, Brian Neas and Ajita Rattani, <b>"Is Facial Recognition Biased at Near-Infrared Spectrum As Well?"</b>, 22nd Annual IEEE Symposium on Technologies for Homeland Security, October 2022. (<a href="https://arxiv.org/pdf/2211.00129.pdf", target="_blank">pdf</a>)</li>
 		 <li>Sreeraj Ramachandran and Ajita Rattani, <b>"Deep Generative Views to Mitigate Gender Classification Bias Across Gender-Race Groups"</b>, ICPR Workshop on Understanding and Mitigating Demographic Bias in Biometric Systems, International Conference on Pattern Recognition, Montreal, Québec, 2022 (<a href="https://arxiv.org/pdf/2208.08382.pdf", target="_blank">pdf</a>)</li>
@@ -104,7 +163,7 @@ $( document ).ready(function() {
 		 <li>Fransiera Maldonado, Laila Cure, Aaron Bowen, Nikki Keene-Woods, Ajita Rattani, Twila Hill, Rhonda Lewis, Janet Twomey, <b>"A Review of Food Accessibility Measures and Decision Support Models"</b>, Wichita State University, 2022 (<a href="https://soar.wichita.edu/handle/10057/23691", target="_blank">pdf</a>)</li>
 		 <li>Hera Siddiqui, Ajita Rattani, Karl Ricanek and Twyla Hill, <b>"An Examination of Bias of Facial Analysis based BMI Prediction Models"</b>, IEEE Computer Vision and Pattern Recognition, Fair and Data-Efficient Computer Vision, New Orleans, Louisiana, 2022. (<a href="https://arxiv.org/pdf/2204.10262.pdf", target="_blank">pdf</a>)</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2021</div>
+	 <div class="publish_res_paper_year" id="2021">2021</div>
 	 <ul class="publish_res_paper">
 		 <li>H. Siddiqui, A. Rattani, L. Cure, N. K. Woods, R. Lewis, J. Twomey,B. Smith-Campbell, and T. Hill, <b>"A Survey on Machine and Deep Learning Models for Childhood and Adolescent Obesity"</b>, in IEEE Access, 2021.(<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9627712", target="_blank">pdf</a>)</li>
 		 <li>Ali Almadan and Ajita Rattani, <b>“Compact CNN Models for On-device Ocular-based User Recognition in Mobile Devices”</b>, the 2021 IEEE Symposium Series on Computational Intelligence (IEEE SSCI 2021) in Orlando, Florida (<a href="https://arxiv.org/pdf/2110.04953.pdf", target="_blank">pdf</a>)</li>
@@ -116,14 +175,14 @@ $( document ).ready(function() {
 		 <li>Mark Nguyen, Ajita Rattani and Reza derakhshani, <b>"Subject independent evaluation of eyebrows as a stand‐alone biometric"</b>, IET Biometrics, 2021. (<a href="https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/bme2.12033", target="_blank">pdf</a>)</li>
 		 <li>Shivang Agarwal, Ajita Rattani, C. Ravindranath Chowdary, <b>"A comparative study on handcrafted features v/s deep features for open-set fingerprint liveness detection"</b>, Pattern Recognition Letters, Volume 147, Pages 34-40, 2021. (<a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865521001276", target="_blank">pdf</a>)</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2020</div>
+	 <div class="publish_res_paper_year" id="2020">2020</div>
 	 <ul class="publish_res_paper">
 		 <li>Ali Almadan, Anoop Krishnan, and Ajita Rattani, <b>“Probing Fairness of Mobile Ocular Biometrics Methods Across Gender on VISOB 2.0 Dataset”</b>, 25th International Conference on Pattern Recognition (ICPR) (<a href="https://arxiv.org/abs/2011.08898", target="_blank">pdf</a>).</li>
 		 <li>Ali Almadan, Anoop Krishnan, and Ajita Rattani, <b>“BWCFace: Open-set Face Recognition using Body-worn Camera”</b>, 19th IEEE International Conference On Machine Learning And Applications (ICMLA) (<a href="https://arxiv.org/abs/2009.11458", target="_blank">pdf</a>).</li>
 		 <li>Anoop Krishnan, Ali Almadan , and Ajita Rattani, <b>“Understanding Fairness of Gender Classification Algorithms Across Gender-Race Groups”</b>, 19th IEEE International Conference On Machine Learning And Applications (ICMLA) (<a href="https://arxiv.org/abs/2009.11491", target="_blank">pdf</a>).</li>
 		 <li>Hera Siddiqui, Ajita Rattani, Dakshina Ranjan Kisku, and Tanner Dean, <b>"AI-based BMI Inference from Facial Images: An Application to Weight Monitoring"</b>, 19th IEEE International Conference On Machine Learning And Applications (ICMLA) (<a href="https://ieeexplore.ieee.org/document/9356152", target="_blank">pdf</a>).</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2019</div>
+	 <div class="publish_res_paper_year" id="2029">2019</div>
 	 <ul class="publish_res_paper">
 		 <li>Babak Poorebrahim Gilkalaye, Ajita Rattani, Reza Derakhshani, <b>"Euclidean-distance based fuzzy commitment scheme for biometric template security"</b>, 7th International Workshop on Biometrics and Forensics (IWBF) (<a href="https://ieeexplore.ieee.org/document/8739177", target="_blank">pdf</a>).</li>
 		 <li>HM Nguyen, A Rattani, R Derakhshani, <b>"Biometrics Fusion with Applications in Passenger Re-authentication for Automated Border Control Systems"</b>. IEEE Symposium on Technologiesfor Homeland Security (HST) (<a href="https://ieeexplore.ieee.org/document/9032968", target="_blank">pdf</a>).</li>
@@ -132,7 +191,7 @@ $( document ).ready(function() {
 		 <li>Zahid Akhtar, Kamran Siddique, Ajita Rattani, Syaheerah Lebai Lutfi, Tiago H Falk, <b>"Why is multimedia quality of experience assessment a challenging problem?"</b>, IEEE Access, Vol. 7, 2019, Pages 117897-117915. (<a href="https://ieeexplore.ieee.org/document/8808854", target="_blank">pdf</a>)</li>
 		 <li>Ahmad Saeed Mohammad, Ajita Rattani, Reza Derakhshani, <b>"Eyebrows and eyeglasses as soft biometrics using deep learning"</b>, IET Biometrics. (<a href="https://www.researchgate.net/publication/332968199_Eyebrows_and_Eyeglasses_as_Soft_Biometrics_Using_Deep_Learning", target="_blank">pdf</a>)</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2018</div>
+	 <div class="publish_res_paper_year" id="2018">2018</div>
 	 <ul class="publish_res_paper">
 		 <li>N Reddy, A Rattani, D Reza, <b>"Multi-biometric convolutional neural networks for mobile user authentication"</b>, IEEE International Symposium on Technologies for Homeland Security (HST) (<a href="https://ieeexplore.ieee.org/document/8574173", target="_blank">pdf</a>).</li>
 		 <li>N Reddy, A Rattani, D Reza, <b>"Ocularnet: deep patch-based ocular biometric recognition"</b>, IEEE International Symposium on Technologies for Homeland Security (HST) (<a href="https://ieeexplore.ieee.org/document/8574156", target="_blank">pdf</a>).</li>
@@ -142,37 +201,37 @@ $( document ).ready(function() {
 		 <li>Ajita Rattani, Reza Derakhshani, <b>"Convolutional neural networks for gender prediction from smartphone-based ocular images"</b>, IET Biometrics. (<a href="https://www.researchgate.net/publication/322657486_Convolutional_Neural_Networks_for_Gender_Prediction_from_Smartphone-based_Ocular_Images", target="_blank">pdf</a>)</li>
 		 <li>Ajita Rattani, Reza Derakhshani, <b>"A survey of mobile face biometrics"</b>, Computers & Electrical Engineering. (<a href="https://www.sciencedirect.com/science/article/abs/pii/S004579061730650X", target="_blank">pdf</a>)</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2017</div>
+	 <div class="publish_res_paper_year" id="2017">2017</div>
 	 <ul class="publish_res_paper">
 		 <li>A. Rattani and R. Derakhshani, <b>"Online Co-training in Mobile Ocular Biometric Recognition"</b>, IEEE Symposium on Technologies for Homeland Security, 1-6, 2017.</li>
 		 <li>A. Rattani, N. Reddy and R. Derakhshani, <b>"Gender Prediction from Mobile Ocular Images: A Feasibility Study"</b>, IEEE Symposium on Technologies for Homeland Security,1-6, 2017.</li>
 		 <li>A. Rattani and R. Derakhshani, <b>"Ocular Biometrics in the Visible Spectrum: A Survey"</b>, Image and Vision Computing, Elsevier, 59, 1- 16, 2017.</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2016</div>
+	 <div class="publish_res_paper_year" id="2016">2016</div>
 	 <ul class="publish_res_paper">
 		 <li>A. Rattani, R. Derakhshani, S. K Saripalle, and V. Gottemukkula, <b>"ICIP 2016 Competition on Mobile Ocular Biometric Recognition"</b>, IEEE Conference on Image Processing, 320-324, 2016.</li>
 		 <li>Y. Ding, A. Rattani and A. Ross, <b>"Bayesian Belief Models for Integrating Match Scores with Liveness and Quality Measures in a Fingerprint Verification System"</b>, IEEE InternationalConference on Biometrics, 1-8, 2016.</li>
 		 <li>N. Reddy, A. Rattani and R. Derakhshani, <b>"A Robust Scheme for Iris Segmentation in Mobile Environment"</b>, IEEE Symposium on Technologies for Homeland Security, 1-6, 2016.</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2015</div>
+	 <div class="publish_res_paper_year" id="2015">2015</div>
 	 <ul class="publish_res_paper">
 		 <li>A. Rattani, Z. Akhtar and G. Foresti, <b>"A Preliminary Study on Identifying Fabrication Material From Fake Fingerprint Images"</b>, IEEE Symposium Series on Computational Intelligence, 362-366, 2016.</li>
 		 <li>Ajita Rattani, Walter J Scheirer, Arun Ross, <b>"Open set fingerprint spoof detection across novel fabrication materials"</b>, IEEE Transactions on Information Forensics and Security.</li>
 		 <li>A. Rattani, W. Scheirer and A. Ross, <b>"Open Set Fingerprint Spoof Detection Across Novel Fabrication Materials"</b>, IEEE Transactions on Information Forensics and Security, 10(11), 2447-2460, 2015</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2014</div>
+	 <div class="publish_res_paper_year" id="2014">2014</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani and Arun Ross, <b>"Automatic Adaptation of Fingerprint Liveness Detector to New Spoof Materials"</b>, Proc. of International Joint Conference on Biometrics (IJCB), (Clearwater, USA), September/October 2014. (Best Poster Award)</li>
 		 <li>Ajita Rattani and Arun Ross, <b>"Minimizing the Impact of Spoof Fabrication Material on Fingerprint Liveness Detector"</b>, Proc. of 21st IEEE International Conference on Image Processing (ICIP), Paris, France, 2014</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2013</div>
+	 <div class="publish_res_paper_year" id="2013">2013</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani, Norman Poh and Arun Ross, <b>"A Bayesian Approach for Modeling Sensor Influence on Quality, Liveness and Match Score Values in Fingerprint Verification,"</b> Proc. of IEEE International Workshop on Information Forensics and Security (WIFS), (Guangzhou, China), November 2013</li>
 		 <li>Ajita Rattani and Norman Poh, <b>"Biometric System Design Under Zero and Non-zero-effort Attacks"</b>, International Conference on Biometrics (ICB), Madrid, Spain, 2013.</li>
 		 <li>Zahid Akhtar, Ajita Rattani, Abdenour Hadid and Massimo Tistarelli, <b>"Face Recognition under Ageing Effect: A Comparative Analysis"</b>, 17th Int’l Conference on Image Analysis and Processing (ICIAP), Naples, Italy, 2013.</li>
 		 <li>A. Rattani, G. L. Marcialis, F. Roli, <b>"Biometric System Adaptation by Self-update and Graph-based techniques"</b>, Journal of Visual Languages and Computing, Elsevier,Vol. 24, Issue 1, pp 1–9, February 2013</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2012</div>
+	 <div class="publish_res_paper_year" id="2012">2012</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani, Gian Luca Marcialis, Eric Granger, Fabio Roli, <b>"A Dual-staged Classification-Selection Approach for Automated Update of Biometric Templates"</b>, International Conference on Pattern Recognition (ICPR), Japan, 2012.</li>
 		 <li>Ajita Rattani, Norman Poh, Arun Ross, <b>"Analysis of User-specific Score Characteristics for Spoof Biometric Attacks"</b>, Proc. of IEEE Computer Society Workshop on Biometrics at the Computer Vision and Pattern Recognition (CVPR) Conference, (Providence, USA), pp.124-129, June 2012.</li>
@@ -180,7 +239,7 @@ $( document ).ready(function() {
 		 <li>A. Rattani, G. L. Marcialis, F. Roli, <b>"Evaluation of Adaptive Biometric systems: Dataset, Protocol and Tools"</b>, International Journal of Biometrics, 2012.</li>
 		 <li>D. R. Kisku, A. Rattani, P. Gupta, J. K. Sing, C. J. Hwang, <b>"Human Identity Verification using Multispectral Palmprint Fusion"</b>, Journal of signal and Information Processing, Scientific Research, Vol. 3, No. 2, pp. 263-273, 2012</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2011</div>
+	 <div class="publish_res_paper_year" id="2011">2011</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani, Gian Luca Marcialis, Fabio Roli, <b>"Temporal Analysis of Biometric Template Update Procedures in Uncontrolled Environment"</b>, Proc. of 16th International Conference on Image Analysis and Processing (ICIAP'11), Ravenna, Italy, 2011</li>
 		 <li>Ajita Rattani, Gian Luca Marcialis, Fabio Roli, <b>"Self Adaptive Systems: An Experimental Analysis of the Performance Over Time"</b>, Proc. of IEEE Workshop on Computational Intelligence in Biometrics and Identity Management (CIBIM'11) - A Special Session on Adaptive Biometric Systems, pp. 36 - 43, 2011.</li>
@@ -188,12 +247,12 @@ $( document ).ready(function() {
 		 <li>Dakshina Ranjan Kisku, Ajita Rattani, Phalguni Gupta, C. J. Hwang, Jamuna Kanta Sing, <b>"Palmprint Identification using FRIT"</b>, Proc. of SPIE Defense, Security and Sensing, SPIE 8063, 80630T, Orlando, Florida, USA, 2011.</li>
 		 <li>Phalguni Gupta, Ajita Rattani, Dakshina Ranjan Kisku, C. Jinshong Hwang, Jamuna Kanta Sing, <b>"Palmprint Verification using Lagrangian Decomposition and Invariant Interest Points"</b>, Proc. of SPIE Defense, Security and Sensing, Proc. SPIE 8063, 80630W, Orlando, Florida, USA, 2011.</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2010</div>
+	 <div class="publish_res_paper_year" id="2010">2010</div>
 	 <ul class="publish_res_paper">
 		 <li>Norman Poh, Ajita Rattani, Massimo Tistarelli and Josef Kittler, <b>"Group-specific Score Normalization for Biometric Systems"</b>, In Proc. of IEEE Computer Society Workshop on Biometrics (CVPRW'10), pp. 38 - 45, 2010.</li>
 		 <li>D. R. Kisku, A. Rattani, P. Gupta, J. K. Sing, <b>"Fusion of Facial Features using DS Theory for Face Recognition"</b>, International Journal of Recent Trends in Engineering and Technology, Vol. 4, No. 1, pp. 139 - 141, 2010.</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2009</div>
+	 <div class="publish_res_paper_year" id="2009">2009</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani, Gian Luca Marcialis, Fabio Roli , <b>"An Experimental Analysis of the Relationship between Biometric Template Update and the Doddington’s Zoo in Face Verification"</b>, In Proc. of 14th International Conference on Image Analysis and Processing (ICIAP'09), Vietri sul Mare (Italy), 2009.</li>
 		 <li>Ajita Rattani, Biagio Freni, Gian Luca Marcialis, Fabio Roli , <b>"Template Update Methods in Adaptive Biometric Systems: A Critical Review"</b>, In Proc. of 3rd International Conference on Biometrics (ICB'09), vol. 5558, Alghero (Italy), pp. 847-856, 2009.</li>
@@ -201,7 +260,7 @@ $( document ).ready(function() {
 		 <li>Dakshina Ranjan Kisku, Ajita Rattani, Phalguni Gupta, Jamuna Kanta Sing, <b>"Biometrics Sensor Image Fusion for Identity Verification: A Case Study with Wavelet-based Fusion Rules and Graph Matching"</b>, In Proc. of 3rd IEEE International Conference on Technologies for Homeland Security (HST'09), MA-Greater Boston, USA, IEEE Press, pp. 433--439, 2009.</li>
 		 <li>Dakshina Ranjan Kisku, Hunny Mehrotra, Ajita Rattani, Phalguni Gupta, Jamuna Kanta Sing, <b>"Multiview Gabor Face Recognition by Fusion of PCA and Canonical Covariate through Feature Weighting"</b>, In Proc. of SPIE International Symposium on Optics and Photonics (Optics+Photonics 2009), San Diego, USA, Vol. 7443, 744308, SPIE, 2009.</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2008</div>
+	 <div class="publish_res_paper_year" id="2008">2008</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani, Gian Luca Marcialis, Fabio Roli , <b>"Biometric Template Update Using the Graph Mincut: A Case Study in Face Verification"</b>, In Proc. 6th IEEE Biometric Symposium (BSYM'08), Tampa, Florida, USA, IEEE, 2008.</li>
 		 <li>Gian Luca Marcialis, Ajita Rattani, Fabio Roli , <b>"Biometric Template Update: An Experimental Investigation on the Relationship Between Update Errors and Performance Degradation in Face Verification"</b>, In Proc. of Joint IAPR Int. Workshop on Structural and Syntactical Pattern Recognition and Statistical Techniques in Pattern Recognition (S+SSPR'08), Orlando (Florida, USA), Springer, 2008.</li>
@@ -211,14 +270,14 @@ $( document ).ready(function() {
 		 <li>Dakshina Ranjan Kisku, Ajita Rattani, Jamuna Kanta Sing, Phalguni Gupta, <b>"Offline Signature Verified with Multiple Classifiers: An Authentic Realization"</b>, In Proc. of 1st International Conference on Advances in Computing (ICAC 2008), Mumbai, India, pp. 550--553, 2008.</li>
 		 <li>Dakshina Ranjan Kisku, Ajita Rattani, Jamuna Kanta Sing, Phalguni Gupta, <b>"Graph Topology based Face Recognition with Invariant Features"</b>, In Proc. of 1st International Conference on Advances in Computing (ICAC 2008), Mumbai, India, pp. 541--545, 2008.</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2007</div>
+	 <div class="publish_res_paper_year" id="2007">2007</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani, Dakshina Ranjan Kisku, Mamuele Bicego, Massimo Tistarelli, <b>"Feature Level Fusion of Face and Fingerprint Biometrics"</b>, In Proc. of 1st IEEE International Conference on Biometrics, Theory, Applications and Systems (BTAS 2007), Washington DC, USA, IEEE Press, pp. 1--6, 2007.</li>
 		 <li>Dakshina Ranjan Kisku, Ajita Rattani, Enrico Grosso, Massimo Tistarelli, <b>"Face Identification by SIFT-based Complete Graph Topology"</b>, In Proc. of 5th IEEE International Workshop on Automatic Identification Advanced Technologies (AUTOID 2007), Alghero, Italy, IEEE Press, pp. 63--68, 2007.</li>
 		 <li>Ajita Rattani, Dakshina Ranjan Kisku, Andrea Lagorio, Massimo Tistarelli, <b>"Facial Template Synthesis based on SIFT Features"</b>, In Proc. of 5th IEEE International Workshop on Automatic Identification Advanced Technologies (AUTOID 2007), Alghero, Italy, IEEE Press, pp. 69--73, 2007.</li>
 		 <li>Dakshina Ranjan Kisku, Ajita Rattani, Phalguni Gupta, <b>"A Novel Approach to Offline Signature Verification using Gaussian Empirical Rule"</b>, In Proc. of 6th European Conference on Information Warfare and Security (ECIW 2007), Swindon, U.K., pp. 139--150, 2007.</li>
 	 </ul>
-	 <div class="publish_res_paper_year">2006</div>
+	 <div class="publish_res_paper_year" id="2006">2006</div>
 	 <ul class="publish_res_paper">
 		 <li>Ajita Rattani, Dakshina Ranjan Kisku, Mamuele Bicego, Massimo Tistarelli, <b>"Robust Feature Level Multibiometrics Classification"</b>, In Proc. of IEEE Biometric Symposium (BSYM 2006), Baltimore, Maryland, USA, IEEE Press, pp. 1--6, 2006.</li>
 		 <li>Ajita Rattani, Nitin Agarwal, Hunny Mehrotra & P. Gupta, <b>"An Efficient Fusion based Classifier"</b>, In Proc. of Workshop on Computer Vision, Graphics, and Image Processing (WCVGIP 2006), Hyderabad, India, 2006.</li>
