@@ -252,3 +252,8 @@ a.dropdown-item {
     margin-right: 5px;
     margin-left: 5px
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}
