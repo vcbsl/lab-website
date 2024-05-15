@@ -252,3 +252,13 @@ a.dropdown-item {
     margin-right: 5px;
     margin-left: 5px
 }
+.activity-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 10px;
+}
+.activity {
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+}
