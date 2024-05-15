@@ -13,14 +13,20 @@
 			window.location.href = "https://vcbsl.github.io/lab-website/";
 		});
 
-		$("#publ-navbar-dd1, #publ-navbar-dd2").click(function(){
+		<!-- $("#publ-navbar-dd1, #publ-navbar-dd2").click(function(){
 			const pathname = window.location.pathname;
 			if (!pathname.includes('publications')) {
 			  window.location.href = "https://vcbsl.github.io/lab-website/publications.html";
 			}
-		  });
+		  }); -->
 		});
 	</script>
+	<style>
+		.label-primary{
+			margin: 1px;
+			display: inline-block;
+		}
+	</style>
 </head>
 <body>
 	<header class="header_sec">
@@ -42,32 +48,43 @@
 						<ul class="nav navbar-nav">
                             <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/">Home</a></li>
                             <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-group.html">Research Group</a></li>
-                            <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-projects.html">Research Projects</a></li>
-                            <!-- <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/publications.html">Publications</a></li> -->
+							<li class="nav-item dropdown">
+								<a class="dropdown-item" class="nav-link dropdown-toggle" href="https://vcbsl.github.io/lab-website/research-projects.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  Research Projects <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  <li><a class="dropdown-item" href="research-projects.html#project1">Biometric-based Person Identification</a></li>
+								  <li><a class="dropdown-item" href="research-projects.html#project2">Fairness in AI</a></li>
+								  <li><a class="dropdown-item" href="research-projects.html#project3">Audio-Visual DeepFake Detection</a></li>
+								  <li><a class="dropdown-item" href="research-projects.html#project4">Medical Vision</a></li>
+								  <li><a class="dropdown-item" href="research-projects.html#project5">Natural Disaster Assessment Models</a></li>
+								  <li><a class="dropdown-item" href="research-projects.html#project6">On-device AI</a></li>
+								</ul>
+							  </li>
 							<li class="nav-item dropdown">
 								<a class="dropdown-item" class="nav-link dropdown-toggle" href="https://vcbsl.github.io/lab-website/publications.html" id="publ-navbar-dd1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								  Publications <span class="caret"></span>
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								  <a class="dropdown-item" href="publications.html#2024">2024</a>
-								  <a class="dropdown-item" href="publications.html#2023">2023</a>
-								  <a class="dropdown-item" href="publications.html#2022">2022</a>
-								  <a class="dropdown-item" href="publications.html#2021">2021</a>
-								  <a class="dropdown-item" href="publications.html#2020">2020</a>
-								  <a class="dropdown-item" href="publications.html#2019">2019</a>
-								  <a class="dropdown-item" href="publications.html#2018">2018</a>
-								  <a class="dropdown-item" href="publications.html#2017">2017</a>
-								  <a class="dropdown-item" href="publications.html#2016">2016</a>
-								  <a class="dropdown-item" href="publications.html#2015">2015</a>
-								  <a class="dropdown-item" href="publications.html#2014">2014</a>
-								  <a class="dropdown-item" href="publications.html#2013">2013</a>
-								  <a class="dropdown-item" href="publications.html#2012">2012</a>
-								  <a class="dropdown-item" href="publications.html#2011">2011</a>
-								  <a class="dropdown-item" href="publications.html#2010">2010</a>
-								  <a class="dropdown-item" href="publications.html#2009">2009</a>
-								  <a class="dropdown-item" href="publications.html#2008">2008</a>
-								  <a class="dropdown-item" href="publications.html#2007">2007</a>
-								  <a class="dropdown-item" href="publications.html#2006">2006</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2024">2024</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2023">2023</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2022">2022</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2021">2021</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2020">2020</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2019">2019</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2018">2018</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2017">2017</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2016">2016</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2015">2015</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2014">2014</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2013">2013</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2012">2012</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2011">2011</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2010">2010</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2009">2009</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2008">2008</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2007">2007</a>
+								  <a class="dropdown-item label label-primary" href="publications.html#2006">2006</a>
 								</div>
 							  </li>
                             <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/datasets.html">Datasets and Code</a></li>
@@ -91,32 +108,43 @@
 				<ul class="nav navbar-nav menu-list">
 				  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/">Home</a></li>
 				  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-group.html">Research Group</a></li>
-                  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/research-projects.html">Research Projects</a></li>
-				  <!-- <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/publications.html">Publications</a></li> -->
+				  <li class="nav-item dropdown">
+					<a class="dropdown-item" class="nav-link dropdown-toggle" href="https://vcbsl.github.io/lab-website/research-projects.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Research Projects <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="research-projects.html#project1">Biometric-based Person Identification</a></li>
+					  <li><a class="dropdown-item" href="research-projects.html#project2">Fairness in AI</a></li>
+					  <li><a class="dropdown-item" href="research-projects.html#project3">Audio-Visual DeepFake Detection</a></li>
+					  <li><a class="dropdown-item" href="research-projects.html#project4">Medical Vision</a></li>
+					  <li><a class="dropdown-item" href="research-projects.html#project5">Natural Disaster Assessment Models</a></li>
+					  <li><a class="dropdown-item" href="research-projects.html#project6">On-device AI</a></li>
+					</ul>
+				  </li>
 				  <li class="nav-item dropdown">
 					<a class="dropdown-item" class="nav-link dropdown-toggle" href="https://vcbsl.github.io/lab-website/publications.html" id="publ-navbar-dd2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					  Publications <span class="caret"></span>
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="publications.html#2024">2024</a>
-					  <a class="dropdown-item" href="publications.html#2023">2023</a>
-					  <a class="dropdown-item" href="publications.html#2022">2022</a>
-					  <a class="dropdown-item" href="publications.html#2021">2021</a>
-					  <a class="dropdown-item" href="publications.html#2020">2020</a>
-					  <a class="dropdown-item" href="publications.html#2019">2019</a>
-					  <a class="dropdown-item" href="publications.html#2018">2018</a>
-					  <a class="dropdown-item" href="publications.html#2017">2017</a>
-					  <a class="dropdown-item" href="publications.html#2016">2016</a>
-					  <a class="dropdown-item" href="publications.html#2015">2015</a>
-					  <a class="dropdown-item" href="publications.html#2014">2014</a>
-					  <a class="dropdown-item" href="publications.html#2013">2013</a>
-					  <a class="dropdown-item" href="publications.html#2012">2012</a>
-					  <a class="dropdown-item" href="publications.html#2011">2011</a>
-					  <a class="dropdown-item" href="publications.html#2010">2010</a>
-					  <a class="dropdown-item" href="publications.html#2009">2009</a>
-					  <a class="dropdown-item" href="publications.html#2008">2008</a>
-					  <a class="dropdown-item" href="publications.html#2007">2007</a>
-					  <a class="dropdown-item" href="publications.html#2006">2006</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2024">2024</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2023">2023</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2022">2022</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2021">2021</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2020">2020</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2019">2019</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2018">2018</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2017">2017</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2016">2016</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2015">2015</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2014">2014</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2013">2013</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2012">2012</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2011">2011</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2010">2010</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2009">2009</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2008">2008</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2007">2007</a>
+					  <a class="dropdown-item label label-primary" href="publications.html#2006">2006</a>
 					</div>
 				  </li>
 				  <li><a class="nav-link" href="https://vcbsl.github.io/lab-website/datasets.html">Datasets and Code</a></li>
@@ -131,12 +159,12 @@
 <div class="page_content">
    <div class="page_content_wrap">
 	<div class="project-links">
-		<a href="#project1">Fairness in AI</a><span class="divider-vert">|</span>
-		<a href="#project2">Biometric-based Person Identification</a><span class="divider-vert">|</span>
-		<a href="#project3">Natural Disaster Assessment Models</a><span class="divider-vert">|</span>
-		<a href="#project4">Audio-Visual DeepFake Detection</a><span class="divider-vert">|</span>
-		<a href="#project5">On-device AI</a><span class="divider-vert">|</span>
-		<a href="#project6">Medical Vision</a>
+		<a href="#project1">Biometric-based Person Identification</a><span class="divider-vert">|</span>
+		<a href="#project2">Fairness in AI</a><span class="divider-vert">|</span>
+		<a href="#project3">Audio-Visual DeepFake Detection</a><span class="divider-vert">|</span>
+		<a href="#project4">Medical Vision</a>
+		<a href="#project5">Natural Disaster Assessment Models</a><span class="divider-vert">|</span>
+		<a href="#project6">On-device AI</a><span class="divider-vert">|</span>
 	</div>
 		<div class="project-item" id="project1" style="margin-top: 50px;">
 			<h1><u>Biometric-based Person Identification</u></h1>
@@ -213,6 +241,8 @@
 				 less populated areas or where access to communication technologies is limited, 
 				 reflecting disparities in user demographics and posting behavior.
 			</p>
+		</div>
+		<div class="project-item" id="project6">
 			<h1><u>On-device AI</u></h1>
 			<p>
 				<img src="images/ondeviceai.png" alt=""  style="object-fit: contain; width: 500px; height: 300px; float: right; margin-left: 15px;">
@@ -227,9 +257,6 @@
 				ocular images, finding that knowledge distillation outperforms pruning methods in terms of 
 				verification accuracy and real-time inference on various mobile devices.
 			</p>
-		</div>
-		<div class="project-item" id="project6">
-			
 		</div>
    </div>
 </div>
